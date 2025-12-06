@@ -1,0 +1,293 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('images/UKUSpear.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0066ff;
+}
+
+.jumbotron {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: lightblue;
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron .display-4 {
+    font-size: 5rem;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.jumbotron .lead {
+    font-size: 2rem;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #333;
+}
+
+
+@media (min-width: 1024px) {
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 5rem;
+    }
+
+    .jumbotron .lead {
+        font-size: 2rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    nav a {
+        font-size: 1.2rem;
+        gap: 1.5rem;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 3.5rem;
+        padding: 15px 30px;
+    }
+
+    .jumbotron .lead {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile Styles (less than 768px) */
+@media (max-width: 767px) {
+    nav a {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 2.5rem;
+        padding: 10px 20px;
+    }
+
+    .jumbotron .lead {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+
+.boxes-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    flex-wrap: wrap;
+    background-image: url('images/UKUSpear.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.white-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    min-width: 250px;
+}
+
+.white-box h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.box-button {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.box-button:hover {
+    background-color: #0052cc;
+    text-decoration: none;
+    color: white;
+}
+
+
+.equipment-circles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.circle-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    border: 3px solid #333;
+    background-size: cover;
+    background-position: center;
+}
+
+.circle-item:nth-child(1) .circle-image {
+    background-image: url('images/spear.jpg');
+}
+
+.circle-item:nth-child(2) .circle-image {
+    background-image: url('images/wetsuit.jpg');
+}
+
+.circle-item:nth-child(3) .circle-image {
+    background-image: url('images/fins.jpg');
+}
+
+.circle-item:nth-child(4) .circle-image {
+    background-image: url('images/mask-snorkel.jpg');
+}
+
+.circle-item:nth-child(5) .circle-image {
+    background-image: url('images/weight-belt.jpg');
+}
+
+.circle-item:nth-child(6) .circle-image {
+    background-image: url('images/dive-knife.jpg');
+}
+
+
+.fish-circles .circle-item:nth-child(1) .circle-image {
+    background-image: url('images/menpachi.jpg');
+}
+
+.fish-circles .circle-item:nth-child(2) .circle-image {
+    background-image: url('images/kole.jpeg');
+}
+
+.fish-circles .circle-item:nth-child(3) .circle-image {
+    background-image: url('images/tako.jpg');
+}
+
+.fish-circles .circle-item:nth-child(4) .circle-image {
+    background-image: url('images/papio.jpeg');
+}
+
+.fish-circles .circle-item:nth-child(5) .circle-image {
+    background-image: url('images/toao.jpeg');
+}
+
+.fish-circles .circle-item:nth-child(6) .circle-image {
+    background-image: url('images/uhu.jpeg');
+}
+
+.circle-item p {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Mobile Responsive for Circles */
+@media (max-width: 767px) {
+    .equipment-circles {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .circle-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.white-box p {
+    color: #666;
+}
+
+.safety-tips {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.safety-tips li {
+    background: #b3e0ff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
